@@ -4,16 +4,14 @@
     padding: 0;
 }
 
+body {
+    font-family: sans-serif;
+}
+
 /* Global */
 header {
     text-align: center;
     margin: 5px 0 5px 0;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 hr{
@@ -36,6 +34,10 @@ hr{
     margin-bottom: 5px;
 }
 
+.mt-5 {
+    margin-top: 5px;
+}
+
 
 /* Home page */
 .row {
@@ -47,7 +49,7 @@ hr{
 /* Top Box */
 .box-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 5px;
 }
 
@@ -82,7 +84,7 @@ hr{
     flex-direction: column;
 
     margin: 0 0 20px 0;
-    padding: 0 5px 0 5px;
+    padding: 0 10px;
 }
 
 .stats-box {
@@ -147,3 +149,13 @@ footer {
     text-align: center;
     margin: 10px;
 }
+
+
+#pre-flop-raise {
+    overflow: hidden;
+    -webkit-appearance: none;
+    background-color: rgb(255, 128, 0);
+    border-radius: 10px;
+    cursor: pointer;
+}
+

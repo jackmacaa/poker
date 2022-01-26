@@ -35,10 +35,8 @@
     </div>
     <hr>
 </header>
-
-<main>
     <!-- Pre-flop section -->
-    <div class="box-column">
+    <section class="box-column">
 
         <h3 class="heading">PRE-FLOP</h3>
         <!-- Pre-flop Raise -->
@@ -64,12 +62,12 @@
             <div class="slider-box">
 
                 <div class="label-box">
-                    <label for="pre-flop-raise-occurrences">OCCURRENCES</label>
+                    <label for="pre-flop-raise-occurrences">Occurrences</label>
                 </div>
                 <div class="number">
-                    <button onclick="decreasePreFlopRaiseOccurrences()">-</button>
+                    <button onclick="occurrences('decreasePreFlopRaise')">-</button>
                     <input type="number" value="0" id="pre-flop-raise-occurrences" min="1" max="1000">
-                    <button onclick="increasePreFlopRaiseOccurrences()">+</button>
+                    <button onclick="occurrences('increasePreFlopRaise')">+</button>
                 </div> 
 
             </div>
@@ -99,7 +97,7 @@
             <div class="slider-box">
 
                 <div class="label-box">
-                    <label for="pre-flop-aggression-occurrences">OCCURRENCES</label>
+                    <label for="pre-flop-aggression-occurrences">Occurrences</label>
                 </div>
                 <div class="number">
                     <button onclick="decreasePreFlopAggressionOccurrences()">-</button>
@@ -112,14 +110,14 @@
         
         <div class="notes">
             <label for="preflop-notes">PRE-FLOP NOTES</label>
-            <textarea id="preflop-notes" rows="5" cols="50"></textarea> 
+            <textarea id="preflop-notes" rows="7" cols="50"></textarea> 
         </div>
           
-    </div>
+    </section>
     
     <!-- Post-flop section -->
-    <div class="box-column">
-    <hr> 
+    <section class="box-column">
+        <hr> 
         <h3 class="heading">POST-FLOP</h3>
 
         <div class="stats-box">
@@ -144,7 +142,7 @@
             <div class="slider-box">
 
                 <div class="label-box">
-                    <label for="post-flop-aggression-occurrences">OCCURRENCES</label>
+                    <label for="post-flop-aggression-occurrences">Occurrences</label>
                 </div>
                 <div class="number">
                     <button onclick="decreasePostFlopAggressionOccurrences()">-</button>
@@ -160,15 +158,13 @@
         <div class="notes">
 
             <label for="preflop-notes">POST-FLOP NOTES</label>
-            <textarea id="preflop-notes" rows="5" cols="50"></textarea>
+            <textarea id="preflop-notes" rows="7" cols="50"></textarea>
 
         </div>
         
 
-    </div>
-    <hr>
-
-</main>
+    </section>
+        <hr>
 
 <footer>
 

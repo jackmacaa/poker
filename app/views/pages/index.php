@@ -8,12 +8,17 @@
 
     <div class="box-row">
 
-        <a href="players/index">View players</a> 
+        <a href="players/index">Players</a> 
 
-        <a href="<?php echo URLROOT; ?>/notes/index">View Notes</a>
+        <a href="<?php echo URLROOT; ?>/notes/index">Notes</a>
 
-        <a href="<?php echo URLROOT; ?>/hands/index">View Hands</a>
+        <a href="<?php echo URLROOT; ?>/hands/index">Hands</a>
         
+    </div>
+
+    <div class="box">
+        <p>This poker app is aimed to assist live play, the abilie to save hands, notes and detailed profiles on villains.</p>
+        <p>Eventually once the basic CRUD functionality is done, there will be functions for randomising and alternate views to assist in taking notes in the moment.</p> 
     </div>
 
 <?php require APPROOT . '/views/inc/footer.php'; ?>

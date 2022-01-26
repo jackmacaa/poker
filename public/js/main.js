@@ -1,79 +1,44 @@
 // Onclick effects for occurrencess buttons
-function occurrences(string2)
-{   let occurances = document.getElementById("pre-flop-raise-occurrences");   
-    //let string2 = string;
-    if(string2 == "decreasePreFlopRaise")
+function occurrences(input)
+{   
+    const preFlopRaiseOccurrences = document.getElementById("pre-flop-raise-occurrences"); 
+    const preFlopAggressionOccurrences = document.getElementById("pre-flop-aggression-occurrences");  
+    
+    // PFRaise
+    if(input == "decreasePreFlopRaise")
     {
-        if(occurances.value > 0)
+        if(preFlopRaiseOccurrences.value > 0)
         {
-            occurances.value--;
+            preFlopRaiseOccurrences.value--;
         }
     }  
-    if(string2 == "increasePreFlopRaise")
+    if(input == "increasePreFlopRaise")
     {
-        if(occurances.value >= 0)
+        if(preFlopRaiseOccurrences.value >= 0)
         {
-            occurances.value++;
+            preFlopRaiseOccurrences.value++;
         }
     } 
-}
 
-// PRE-FLOP RAISE
-function increasePreFlopRaiseOccurrences(){
-    let occurances = document.getElementById("pre-flop-raise-occurrences");
-
-    if(occurances.value >= 0)
+    // PFAgression
+    if(input == "decreasePreFlopAggression")
     {
-        occurances.value++;
-    }
-}
-
-function decreasePreFlopRaiseOccurrences(){
-    let occurances = document.getElementById("pre-flop-raise-occurrences");
-
-    if(occurances.value > 0)
+        if(preFlopAggressionOccurrences.value > 0)
+        {
+            preFlopAggressionOccurrences.value--;
+        }
+    }  
+    if(input == "increasePreFlopAggression")
     {
-        occurances.value--;
-    }
+        if(preFlopAggressionOccurrences.value >= 0)
+        {
+            preFlopAggressionOccurrences.value++;
+        }
+    } 
+
+
 }
 
-// PRE-FLOP AGGRESSION
-function increasePreFlopAggressionOccurrences(){
-    let occurances = document.getElementById("pre-flop-aggression-occurrences");
-
-    if(occurances.value >= 0)
-    {
-        occurances.value++;
-    }
-}
-
-function decreasePreFlopAggressionOccurrences(){
-    let occurances = document.getElementById("pre-flop-aggression-occurrences");
-
-    if(occurances.value > 0)
-    {
-        occurances.value--;
-    }
-}
-
-// POST-FLOP AGGRESSION
-function increasePostFlopAggressionOccurrences(){
-    let occurances = document.getElementById("post-flop-aggression-occurrences");
-
-    if(occurances.value >= 0)
-    {
-        occurances.value++;
-    }
-}
-
-function decreasePostFlopAggressionOccurrences(){
-    let occurances = document.getElementById("post-flop-aggression-occurrences");
-
-    if(occurances.value > 0)
-    {
-        occurances.value--;
-    }
-}
 
 // Slider change functions
 const slider = document.getElementById("pre-flop-raise");

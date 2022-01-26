@@ -100,9 +100,9 @@
                     <label for="pre-flop-aggression-occurrences">Occurrences</label>
                 </div>
                 <div class="number">
-                    <button onclick="decreasePreFlopAggressionOccurrences()">-</button>
+                    <button onclick="occurrences('decreasePreFlopAggression')">-</button>
                     <input type="number" value="0" id="pre-flop-aggression-occurrences" min="1" max="1000">
-                    <button onclick="increasePreFlopAggressionOccurrences()">+</button>
+                    <button onclick="occurrences('increasePreFlopAggression')">+</button>
                 </div> 
 
             </div>
@@ -115,57 +115,6 @@
           
     </section>
     
-    <!-- Post-flop section -->
-    <section class="box-column">
-        <hr> 
-        <h3 class="heading">POST-FLOP</h3>
-
-        <div class="stats-box">
-
-            <div class="slider-box">
-
-                <div class="label-box">
-                    <label for="post-flop-aggression">POST-FLOP AGGRESSION</label>
-                </div>
-                <div class="slider">
-                    <input type="range" id="post-flop-aggression" min="1" max="100" oninput="this.nextElementSibling.value = this.value">
-                    <output>50</output>
-                </div>
-
-                <div class="box-row2">
-                    <p>Passive</p> 
-                    <p>Aggressive</p> 
-                </div>  
-
-            </div>
-
-            <div class="slider-box">
-
-                <div class="label-box">
-                    <label for="post-flop-aggression-occurrences">Occurrences</label>
-                </div>
-                <div class="number">
-                    <button onclick="decreasePostFlopAggressionOccurrences()">-</button>
-                    <input type="number" value="0" id="post-flop-aggression-occurrences" min="1" max="1000">
-                    <button onclick="increasePostFlopAggressionOccurrences()">+</button>
-                </div> 
-
-            </div>
-
-        </div>
-
-
-        <div class="notes">
-
-            <label for="preflop-notes">POST-FLOP NOTES</label>
-            <textarea id="preflop-notes" rows="7" cols="50"></textarea>
-
-        </div>
-        
-
-    </section>
-        <hr>
-
 <footer>
 
     <a href="<?= URLROOT; ?>">Home</a>

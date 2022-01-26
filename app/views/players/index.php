@@ -2,10 +2,10 @@
 
     <h1 ><?php echo $data['title']; ?></h1>
 
-    <a href="<?php echo URLROOT; ?>/players/add">Add new player</a>
+    <a href="<?php echo URLROOT; ?>/players/add">Add Player</a>
 
     <div class="row">
-        <a href="#">View player</a>
+        <a href="#">View Player</a>
         <select>
             <option>Player 1</option>
             <option>Player 2</option>

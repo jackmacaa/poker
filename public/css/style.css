@@ -38,6 +38,10 @@ hr{
     margin-top: 5px;
 }
 
+.box {
+    margin: 10px;
+    padding: 10px;
+}
 
 /* Home page */
 .row {
@@ -150,11 +154,28 @@ footer {
     margin: 10px;
 }
 
+input[type=range]::-webkit-slider-thumb {
+
+    height: 17px;
+    width: 17px;
+    border-radius: 20px;
+    background: #000000;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
 
 #pre-flop-raise {
     overflow: hidden;
     -webkit-appearance: none;
     background-color: rgb(255, 128, 0);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#pre-flop-aggression {
+    overflow: hidden;
+    -webkit-appearance: none;
+    background: linear-gradient(90deg, rgba(255,255,0,1) 0%, rgba(242,118,13,1) 73%, rgba(255,0,0,1) 100%);
     border-radius: 10px;
     cursor: pointer;
 }

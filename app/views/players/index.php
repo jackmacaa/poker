@@ -1,8 +1,8 @@
 <?php require APPROOT . '/views/inc/header.php'; ?>
 
-    <h2 ><?php echo $data['title']; ?></h2>
+    <h1 ><?php echo $data['title']; ?></h1>
 
-    <h1> Players Index </h1>
+    <a href="<?php echo URLROOT; ?>/players/add">Add new player</a>
 
     <div class="row">
         <a href="#">View player</a>
@@ -13,6 +13,6 @@
         </select>    
     </div>
 
-    <a href="<?= URLROOT; ?>">Home</a>
+    <a href="<?= URLROOT; ?>">Home</a>   
 
 <?php require APPROOT . '/views/inc/footer.php'; ?>

@@ -36,36 +36,34 @@ function occurrences(input)
         }
     } 
 
-
 }
 
-
 // Slider change functions
-const slider = document.getElementById("pre-flop-raise");
+// const slider = document.getElementById("pre-flop-raise");
 
-slider.addEventListener('input', (event) => {
-   // console.log(slider.value)
-    let rangeValue = slider.value;
+// slider.addEventListener('input', (event) => {
+//    // console.log(slider.value)
+//     let rangeValue = slider.value;
 
-    if(rangeValue <= 20)
-    {
-        slider.style.backgroundColor = "rgb(255, 255, 0)";
-    } 
-    else if (rangeValue <= 40)
-    {
-       slider.style.backgroundColor = "rgb(255, 225 , 0)";
-    }
-    else if (rangeValue <= 60)
-    {
-       slider.style.backgroundColor = "rgb(255, 192 , 0)";
-    }
-    else if (rangeValue <= 80)
-    {
-       slider.style.backgroundColor = "rgb(255, 128, 0)";
-    }
-    else
-    {
-        slider.style.backgroundColor = "rgb(255, 0, 0)";  
-    }
-});
+//     if(rangeValue <= 20)
+//     {
+//         slider.style.backgroundColor = "rgb(255, 255, 0)";
+//     } 
+//     else if (rangeValue <= 40)
+//     {
+//        slider.style.backgroundColor = "rgb(255, 225 , 0)";
+//     }
+//     else if (rangeValue <= 60)
+//     {
+//        slider.style.backgroundColor = "rgb(255, 192 , 0)";
+//     }
+//     else if (rangeValue <= 80)
+//     {
+//        slider.style.backgroundColor = "rgb(255, 128, 0)";
+//     }
+//     else
+//     {
+//         slider.style.backgroundColor = "rgb(255, 0, 0)";  
+//     }
+// });
 

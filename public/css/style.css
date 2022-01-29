@@ -71,7 +71,7 @@ hr{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 30px;
+    min-height: 40px;
 }
 
 .item label {
@@ -156,9 +156,9 @@ footer {
 
 input[type=range]::-webkit-slider-thumb {
 
-    height: 17px;
-    width: 17px;
-    border-radius: 20px;
+    height: 15px;
+    width: 15px;
+    border-radius: 5px;
     background: #000000;
     cursor: pointer;
     -webkit-appearance: none;
@@ -167,7 +167,7 @@ input[type=range]::-webkit-slider-thumb {
 #pre-flop-raise {
     overflow: hidden;
     -webkit-appearance: none;
-    background-color: rgb(255, 128, 0);
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,255,0,1) 50%, rgba(0,255,0,1) 100%);
     border-radius: 10px;
     cursor: pointer;
 }
@@ -175,8 +175,9 @@ input[type=range]::-webkit-slider-thumb {
 #pre-flop-aggression {
     overflow: hidden;
     -webkit-appearance: none;
-    background: linear-gradient(90deg, rgba(255,255,0,1) 0%, rgba(242,118,13,1) 73%, rgba(255,0,0,1) 100%);
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,255,0,1) 51%, rgba(0,255,0,1) 100%);
     border-radius: 10px;
     cursor: pointer;
 }
+/* linear-gradient(90deg, rgba(255,255,0,1) 0%, rgba(242,118,13,1) 50%, rgba(255,0,0,1) 100%);
 

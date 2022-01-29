@@ -1,7 +1,7 @@
 <?php require APPROOT . '/views/inc/header.php'; ?>
 
 <header>
-<h2 class="text-center"><?php echo $data['title']; ?></h2>
+<a href="<?= URLROOT; ?>/players"><h2 class="text-center"><?php echo $data['title']; ?></h2></a>
 
     <div class="box-row">
 
@@ -20,6 +20,7 @@
             <div class="item">
                 <label for="type">Type:</label>
                 <select id="type">
+                    <option>UNKNOWN</option>
                     <option>TAG</option>
                     <option>LAG</option>
                     <option>NIT</option>
@@ -120,5 +121,7 @@
     <a href="<?= URLROOT; ?>">Home</a>
 
 </footer>
+
+<script src="<?= URLROOT; ?>/js/main.js"></script>
 
 <?php require APPROOT . '/views/inc/footer.php'; ?>

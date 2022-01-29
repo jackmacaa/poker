@@ -2,7 +2,7 @@
 
     <header>
 
-        <h1><?= $data['title']; ?></h1>   
+    <a href="<?php echo URLROOT; ?>/notes"><h1><?= $data['title']; ?></h1></a>   
         
     </header> 
 

@@ -6,6 +6,7 @@
 
 body {
     font-family: sans-serif;
+    font-size: 18px;
 }
 
 /* Global */
@@ -59,10 +60,22 @@ hr{
 
 .left-box {
     margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.right-box img {
+    max-height: 100%;
+    max-width: 130px;
+    min-height: 100px;
+    min-width: 100px;
 }
 
 .right-box {
     margin: 5px;
+    max-height: 150px;
+
 }
 
 .item {
@@ -71,11 +84,15 @@ hr{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 40px;
+    min-height: 30px;
 }
 
 .item label {
     padding-right: 5px;
+}
+
+.item input {
+    min-height: 25px;
 }
 
 .right-box img {
@@ -86,7 +103,6 @@ hr{
 .box-column {
     display: flex;
     flex-direction: column;
-
     margin: 0 0 20px 0;
     padding: 0 10px;
 }
@@ -141,10 +157,11 @@ hr{
 .notes {
     text-align: center;
 }
-
-.notes textarea{
+textarea{
     resize: vertical;
     width: 95%;
+    font-family: inherit;
+    font-size: inherit;
 }
 
 

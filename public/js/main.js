@@ -10,6 +10,7 @@ function occurrences(input)
         if(preFlopRaiseOccurrences.value > 0)
         {
             preFlopRaiseOccurrences.value--;
+            
         }
     }  
     if(input == "increasePreFlopRaise")
@@ -17,6 +18,7 @@ function occurrences(input)
         if(preFlopRaiseOccurrences.value >= 0)
         {
             preFlopRaiseOccurrences.value++;
+            
         }
     } 
 
@@ -26,6 +28,7 @@ function occurrences(input)
         if(preFlopAggressionOccurrences.value > 0)
         {
             preFlopAggressionOccurrences.value--;
+            
         }
     }  
     if(input == "increasePreFlopAggression")
@@ -33,10 +36,13 @@ function occurrences(input)
         if(preFlopAggressionOccurrences.value >= 0)
         {
             preFlopAggressionOccurrences.value++;
+            
         }
     } 
+ 
 
 }
+
 
 // Slider change functions
 // const slider = document.getElementById("pre-flop-raise");

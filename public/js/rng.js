@@ -45,7 +45,7 @@ function getRndInteger25(min, max)
 }
 
 //TIMER FUNCTIONS
-let clock;
+let clock = "";
 
 function timer()
 {
@@ -60,10 +60,15 @@ function runTimer()
 
     $delay = seconds * 1000;  
 
-    clock = setInterval(timer, $delay);
+    if(clock == "")
+    {
+        clock = setInterval(timer, $delay);
+    }
+    
 }
 
 function stopTimer()
 {
     clearInterval(clock); 
+    clock = "";
 }

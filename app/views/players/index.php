@@ -16,18 +16,22 @@
 
 <hr>
 
-    <div class="box-row">
+    <div class="box-column">
 
-        <div class="row">
-            <a href="#">View Player</a>
-            <select>
-                <option>Player 1</option>
-                <option>Player 2</option>
-                <option>Player 3</option>
-            </select> 
+        <?php foreach($data['players'] as $player) : ?>
 
-        </div>
-  
+            <div class="box-row2">
+
+                <a href="<?php echo URLROOT; ?>/players/edit/<?= $player->id; ?>"><?= $player->name; ?> : </a>
+                <p><?= "colour: " . $player->colour; ?> </p>
+                <p><?= "Type: " . $player->type; ?> </p>
+                
+                <br>
+
+            </div>
+
+        <?php endforeach; ?>
+
     </div>
 
 <?php require APPROOT . '/views/inc/footer.php'; ?>

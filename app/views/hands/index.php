@@ -1,4 +1,5 @@
 <?php require APPROOT . '/views/inc/header.php'; ?>
+<?php require APPROOT . '/models/Deck.php'; ?>
 
     <header>
 
@@ -18,11 +19,18 @@
 
     <section class="box-column">
         
-        <h2 class="text-center">Hand Title</h2>
-        <h3>Created on: 26/01/22</h3>
-        <p>Flop info</p>
-        <p>turn info</p>
-        <p>riverinfo</p>
+        <h2 class="text-center">
+
+            <?php $deck1 = new Deck; ?>
+           
+            <?= var_dump($deck1->getDeck()); ?>
+            <br><br>
+            <?= var_dump($deck1->deal()); ?>
+            <?= var_dump($deck1->deal()); ?>
+            <?= var_dump($deck1->shuffle()); ?>
+            <br><br>
+
+        </h2>
 
     </section>
 

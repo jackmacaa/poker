@@ -164,6 +164,20 @@ textarea{
     font-size: inherit;
 }
 
+/* hands page */
+.buttons-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.buttons-cards button{
+    width: 7.5%;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    height: 25px;
+}
+
 
 /* Footer */
 footer {

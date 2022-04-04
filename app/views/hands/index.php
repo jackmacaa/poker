@@ -17,20 +17,36 @@
 
     <hr>
 
-    <section class="box-column">
+    <div class="buttons-cards">
         
-        <h2 class="text-center">
+        <?php $deck1 = new Deck; ?>
+        
+        <?php foreach($deck1->getDeck() as $card): ?>
+            <button> <?= $card ; ?> </button>
+        <?php endforeach; ?>
 
-            <?php $deck1 = new Deck; ?>
-           
-            <?= var_dump($deck1->getDeck()); ?>
-            <br><br>
-            <?= var_dump($deck1->deal()); ?>
-            <?= var_dump($deck1->deal()); ?>
-            <?= var_dump($deck1->shuffle()); ?>
-            <br><br>
+        <?php /*
+        <?= var_dump($deck1->getDeck()); ?>
+        <br><br>
 
-        </h2>
+        <?php $deck1->shuffle(); ?>
+        <br><br>
+
+        <?= var_dump($deck1->getDeck()); ?>
+        <br><br>
+
+        <?php $deck1->deal(); ?>
+        <br><br>
+
+        <?= var_dump($deck1->getDeck()); ?>
+        <br><br>
+
+        <?php $deck1->dealRand(); ?>
+        <br><br>
+
+        <?= var_dump($deck1->getDeck()); ?>
+        <br><br>
+        */;?>
 
     </section>
 

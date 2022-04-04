@@ -12,28 +12,48 @@ class Deck
 
     protected $deltCards = [];
 
-    public function getDeck()
+    protected $hero = [];
+    protected $villian = [];
+
+    protected $board = [];
+    protected $flop = [];
+    protected $turn = [];
+    protected $river = [];
+
+    public function getDeck(): array
     {
         return $this->cards;
     }
-    
-    public function deal()
+
+    public function getDeltCards(): array
     {
-        $randCard = rand(0, 51);
+        return $this->deltCards;
+    }
+
+    public function deal(): void
+    {
+        $temp = array_pop($this->cards);
+
+        array_push($this->deltCards, $temp);
+    }
+    
+    public function dealRand(): void
+    {
+        $cardsInDeck = count($this->cards) - 1;
+
+        $randCard = rand(0, $cardsInDeck);
 
         while(!isset($this->cards[$randCard]))
         {
-            $randCard = rand(0, 51);
+            $randCard = rand(0, $cardsInDeck);
         }
 
         $this->deltCards[] = $this->cards[$randCard];
 
         unset($this->cards[$randCard]);
-        
-        return $this->deltCards;
     }
 
-    public function shuffle()
+    public function shuffle(): void
     {
         for($i = 1; $i < 100; $i++)
         {
@@ -48,8 +68,6 @@ class Deck
 
             [$this->cards[$randCard1], $this->cards[$randCard2]] = [$this->cards[$randCard2], $this->cards[$randCard1]];  
         }
-
-        return $this->cards;
     }
 
 }

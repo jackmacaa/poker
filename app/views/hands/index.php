@@ -22,8 +22,16 @@
         <?php $deck1 = new Deck; ?>
         
         <?php foreach($deck1->getDeck() as $card): ?>
-            <button> <?= $card ; ?> </button>
+            <button onclick="heroCard('<?= $card ; ?>')" id="btn<?= $card ; ?>"> <?= $card ; ?> </button>
         <?php endforeach; ?>
+        
+        <label>Hero Cards</label>
+        <input type="text" name="heroCardOne" id="heroCardOne">
+        <input type="text" name="heroCardTwo" id="heroCardTwo">
+        <label>Hero Stack</label>
+        <input type="text" name="heroStack" id="heroStack">
+        <label>Hero Position</label>
+        <input type="text" name="heroPos" id="heroPos">
 
         <?php /*
         <?= var_dump($deck1->getDeck()); ?>
@@ -49,5 +57,7 @@
         */;?>
 
     </section>
+
+    <script src="<?= URLROOT; ?>/js/deck.js"></script>  
 
 <?php require APPROOT . '/views/inc/footer.php'; ?>

@@ -1,20 +1,25 @@
+let step = "heroOne";
+
 function heroCard(card)
 {
-    if(document.getElementById("heroCardOne").value != "" && document.getElementById("heroCardTwo").value == "")
+    let btn = "btn" + card
+    
+    if(step == "heroTwo")
     {
-        document.getElementById("heroCardTwo").value = card;
+        document.getElementById("heroCardTwo").value = card
 
-        btn = "btn" + card;
+        document.getElementById(btn).disabled = true
 
-        document.getElementById(btn).disabled = true;
+        step = "villianOne" 
     }
-    if(document.getElementById("heroCardOne").value == "")
+
+    if(step == "heroOne")
     {
-        document.getElementById("heroCardOne").value = card;
+        document.getElementById("heroCardOne").value = card
 
-        btn = "btn" + card;
+        document.getElementById(btn).disabled = true
 
-        document.getElementById(btn).disabled = true;
+        step = "heroTwo" 
     }
- 
+
 }

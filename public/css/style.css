@@ -171,13 +171,27 @@ textarea{
     justify-content: center;
 }
 
-.buttons-cards button{
+.buttons-cards button {
     width: 7.5%;
     box-sizing: border-box;
     margin-bottom: 5px;
     height: 25px;
 }
 
+input[type="number"]#stack {
+    width: 75px;
+}
+
+
+.players {
+    display: flex; 
+}
+
+.player {
+    width: 50%;
+    box-sizing: border-box;
+    text-align: center;
+}
 
 /* Footer */
 footer {

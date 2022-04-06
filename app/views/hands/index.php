@@ -24,14 +24,68 @@
         <?php foreach($deck1->getDeck() as $card): ?>
             <button onclick="heroCard('<?= $card ; ?>')" id="btn<?= $card ; ?>"> <?= $card ; ?> </button>
         <?php endforeach; ?>
-        
-        <label>Hero Cards</label>
-        <input type="text" name="heroCardOne" id="heroCardOne">
-        <input type="text" name="heroCardTwo" id="heroCardTwo">
-        <label>Hero Stack</label>
-        <input type="text" name="heroStack" id="heroStack">
-        <label>Hero Position</label>
-        <input type="text" name="heroPos" id="heroPos">
+
+    </div>
+
+    <div class="players">
+
+        <div class="player">
+            <span>Hero</span>
+        </div>
+        <div class="player">
+            <span>Villian</span>
+        </div>
+     
+    </div>    
+
+
+    <div class="players">
+
+        <div class="player">
+    
+            <label>Cards</label>
+            <input type="text" name="heroCardOne" id="heroCardOne" maxlength="2" size="2">
+            <input type="text" name="heroCardTwo" id="heroCardTwo" maxlength="2" size="2">
+
+            <label>Stack</label>
+            <input type="number" name="heroStack" id="stack">
+
+            <select name="positions" id="positions">
+                <option value="">Position</option>
+                <option value=sb">SB</option>
+                <option value="BB">BB</option>
+                <option value="utg">UTG</option>
+                <option value="mp">MP</option>
+                <option value="hj">HJ</option>
+                <option value="co"">CO</option>
+                <option value="bn"">BN</option>
+            </select>
+
+        </div> 
+
+        <div class="player">
+    
+            <label>Cards</label>
+            <input type="text" name="villianCardOne" id="villianCardOne" maxlength="2" size="2">
+            <input type="text" name="villianCardTwo" id="villianCardTwo" maxlength="2" size="2">
+
+            <label>Stack</label>
+            <input type="number" name="villianStack" id="stack">
+
+            <select name="positions" id="positions">
+                <option value="">Position</option>
+                <option value=sb">SB</option>
+                <option value="BB">BB</option>
+                <option value="utg">UTG</option>
+                <option value="mp">MP</option>
+                <option value="hj">HJ</option>
+                <option value="co"">CO</option>
+                <option value="bn"">BN</option>
+            </select>
+
+        </div>
+
+    </div>
 
         <?php /*
         <?= var_dump($deck1->getDeck()); ?>
@@ -56,7 +110,7 @@
         <br><br>
         */;?>
 
-    </section>
+       
 
     <script src="<?= URLROOT; ?>/js/deck.js"></script>  
 

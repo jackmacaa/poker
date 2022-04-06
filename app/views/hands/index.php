@@ -22,7 +22,7 @@
         <?php $deck1 = new Deck; ?>
         
         <?php foreach($deck1->getDeck() as $card): ?>
-            <button onclick="heroCard('<?= $card ; ?>')" id="btn<?= $card ; ?>"> <?= $card ; ?> </button>
+            <button onclick="cards('<?= $card ; ?>')" id="btn<?= $card ; ?>"> <?= $card ; ?> </button>
         <?php endforeach; ?>
 
     </div>
@@ -44,7 +44,7 @@
         <div class="player">
     
             <label>Cards</label>
-            <input type="text" name="heroCardOne" id="heroCardOne" maxlength="2" size="2">
+            <input type="text" name="heroCardOne" id="heroCardOne" maxlength="2" size="2" autofocus>
             <input type="text" name="heroCardTwo" id="heroCardTwo" maxlength="2" size="2">
 
             <label>Stack</label>
